@@ -1,11 +1,61 @@
 body {
   font-family: Arial, Helvetica, sans-serif;
+  height: 100vh;
   background-color: #d5d4d4;
   justify-content: center;
-
+  background-image: url("https://images.unsplash.com/photo-1519501025264-65ba15a82390?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max&ixid=eyJhcHBfaWQiOjEzNzYzNn0?utm_source=dictionnaire&utm_medium=referral");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
 }
 
-.container {
+.global-container{
   margin: 20px;
   border: 2px solid red;
+}
+
+.weather-container{
+  display: flex;
+  justify-content: space-between;
+  padding: 25px;
+  margin: 25px 7% ;
+  border-radius: 12px;
+  background-color: rgba(255, 255, 255, 0.895);
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.124);
+}
+
+.city {
+  font-weight: 700;
+  font-size: 27px;
+  margin: 5px;
+}
+
+.weather {
+  margin: 5px;
+}
+
+.weather-min-max {
+  margin: 5px;
+  font-size: 12px;
+}
+
+.temperature{
+  margin: 0;
+  font-size: 86px;
+}
+
+.parameter-value {
+  margin-left: 5px;
+}
+
+.parameter-label{
+font-weight: 700;
+}
+
+.details{
+  font-size: 14px !important;
+}
+
+parameter-value, .parameter-label{
+font-size: 12px;
 }

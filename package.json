@@ -1,5 +1,5 @@
 {
-  "name": "weather-app",
+  "name": "weather-project-final",
   "private": true,
   "version": "0.0.0",
   "type": "module",
@@ -10,9 +10,7 @@
     "preview": "vite preview"
   },
   "dependencies": {
-    "axios": "/home/cam/Documents/Becode/2- The hill/intro-react/node_modules1.4.0",
     "react": "^18.2.0",
-    "react-accessible-accordion": "/home/cam/Documents/Becode/2- The hill/intro-react/node_modules5.0.0",
     "react-dom": "^18.2.0",
     "react-select-async-paginate": "/home/cam/Documents/Becode/2- The hill/intro-react/node_modules0.7.3"
   },
