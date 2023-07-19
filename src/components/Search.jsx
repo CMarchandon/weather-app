@@ -9,7 +9,7 @@ const Search = ({ onSearchChange }) => {
   // Function to load options for the search input
   const loadOptions = (inputValue) => {
     return fetch(
-      `${getGeoapi.geoApp}/cities?minPopulation=100000&namePrefix=${inputValue}`, // ATENTTION CHANGE
+      `${getGeoapi.geoApp}/cities?namePrefix=${inputValue}`, // ATENTTION CHANGE
       getGeoapi
     )
       .then((response) => response.json()) // Convert the response to JSON
@@ -39,6 +39,7 @@ const Search = ({ onSearchChange }) => {
       value={search}
       onChange={handleOnChange}
       loadOptions={loadOptions} // Set the 'loadOptions' function to fetch and load options asynchronously
+      className="seachbar"
     />
   );
 };

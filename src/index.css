@@ -1,14 +1,31 @@
 body{
   margin: 0;
   font-family: Arial, Helvetica, sans-serif;
+  background: rgb(61, 61, 61);
+}
+h1{
+  color: azure;
+  font-weight: 700;
+  text-shadow: 1px 1px 2px rgb(80, 80, 80);
+}
+
+.corp{
+  position: relative;
+  font-size: 15px;
+  top: -15px;
+  text-shadow: 1px 1px 2px rgb(43, 43, 43);
+}
+
+.seachbar{
+  border-radius: 15px;
+  background-color: aqua;
 }
 
 .global-container{
-  margin: 20px;
   padding: 50px;
-  height: 100vh;
+  height: 100%;
   margin: 0;
-  background-position: center;
+  background-position: center top;
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -90,26 +107,66 @@ font-size: 12px;
 }
 
 .temperature-little{
-  font-size: 70px;
+  font-size: 50px;
   margin: 0;
 }
 
-@media (max-width: 500px) {
-  .temperature{
+/* CSS for larger screens */
+
+@media (min-width: 720px) and (max-width: 1240px) {
+  .grid-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* Two columns with equal width */
+    grid-template-rows: repeat(3, 1fr); /* Three rows with equal height */
+    gap: 10px;
+    height: 100%;
+  }
+  .weather-container-top {
+    margin: 0;
+  }
+  .temperature-little {
     margin: 0;
     font-size: 50px; 
   }
+  img {
+    max-width: 100%;
+    max-height: 100%;
+    display: block;
+    margin: 20% 0 20%;
+  }
+}
 
+/* CSS for mobile devices */
+
+@media (max-width: 720px) {
+  .temperature {
+    margin: 0;
+    font-size: 50px; 
+  }
+  .weather-container-top {
+    margin: 0 20px 0 0;
+  }
+  .temperature-little {
+    font-size: 30px;
+  }
   .grid-container {
     display: grid;
-    grid-template-columns: 1fr; /* Une colonne */
-    grid-template-rows: repeat(7, 1fr); /* Sept lignes */
-    gap: 10px; /* Espacement entre les éléments de la grille */
-    height: 100%; /* Hauteur de la grille */
+    grid-template-columns: 1fr; 
+    grid-template-rows: repeat(7, 1fr);
+    gap: 10px; 
+    height: 100%; 
   }
-  .weather-container{
+  .weather-container {
     justify-content: center;
     text-align: center;
   }
 
+  img {
+    max-width: 100%;
+    max-height: 100%;
+    display: block;
+  }
 }
+
+
+
