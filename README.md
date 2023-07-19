@@ -28,3 +28,4 @@ The development of this Weather App was made possible by the documentation resou
 - [React](https://reactjs.org/)
 - [OpenClassrooms](https://openclassrooms.com/) 
 - [freeCodeCamp](https://www.freecodecamp.org/) 
+# weather-app
