@@ -1,5 +1,5 @@
 {
-  "name": "weather-shit",
+  "name": "vite-project",
   "private": true,
   "version": "0.0.0",
   "type": "module",
@@ -12,7 +12,6 @@
   "dependencies": {
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
-    "react-select": "/home/cam/Documents/Becode/2- The hill/intro-react/node_modules5.7.4",
     "react-select-async-paginate": "/home/cam/Documents/Becode/2- The hill/intro-react/node_modules0.7.3"
   },
   "devDependencies": {

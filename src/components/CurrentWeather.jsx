@@ -4,6 +4,7 @@ const CurrentWeather = ({data}) => {
     return (
         <div className='weather-container'>
             <div className='weather-container-top'>
+                <p>Today meteto</p>
                 <p className='city'>{data.city}</p>
                 <p className='weather'> {data.weather[0].description} </p>
                 <p className='weather-min-max'> {Math.round(data.main.temp_min)}°/{Math.round(data.main.temp_max)}°</p>

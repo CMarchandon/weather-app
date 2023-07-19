@@ -1,6 +1,7 @@
 import { useState } from "react"; // Import the useState hook from React
 import  {AsyncPaginate}  from "react-select-async-paginate"; // Import the AsyncPaginate component from react-select-async-paginate
 import { getGeoapi } from "../api"; // Import the getGeoapi function from the "../api" file
+import '../index.css'
 
 const Search = ({ onSearchChange }) => {
   const [search, setSearch] = useState(null); // Declare a state variable 'search' and a function 'setSearch' to update it

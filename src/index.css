@@ -1,3 +1,11 @@
+@media (max-width: 500px) {
+  .temperature{
+    margin: 0;
+    font-size: 35px; 
+  }
+
+}
+
 body {
   font-family: Arial, Helvetica, sans-serif;
   height: 100vh;
@@ -12,16 +20,18 @@ body {
 .global-container{
   margin: 20px;
   border: 2px solid red;
+  padding: 25px;
 }
 
 .weather-container{
   display: flex;
   justify-content: space-between;
   padding: 25px;
-  margin: 25px 7% ;
+  margin: 25px 0 25px 0;
   border-radius: 12px;
   background-color: rgba(255, 255, 255, 0.895);
   box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.124);
+  flex-wrap: wrap;
 }
 
 .city {
@@ -58,4 +68,37 @@ font-weight: 700;
 
 parameter-value, .parameter-label{
 font-size: 12px;
+}
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: auto auto;
+  grid-gap: 2%;
+}
+
+.weather-container-little{
+  display: flex;
+  justify-content: space-between;
+  border-radius: 12px;
+  background-color: rgba(255, 255, 255, 0.895);
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.124);
+  padding: 25px;
+  margin-top: 5px;
+}
+
+.day{
+  margin: 5px;
+}
+
+.day-little{
+  font-size: 15px;
+}
+
+.weather-little{
+  font-size: 12px;
+}
+
+.temperature-little{
+  font-size: 70px;
+  margin: 0;
 }
