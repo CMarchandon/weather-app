@@ -1,26 +1,16 @@
-@media (max-width: 500px) {
-  .temperature{
-    margin: 0;
-    font-size: 35px; 
-  }
-
-}
-
-body {
+body{
+  margin: 0;
   font-family: Arial, Helvetica, sans-serif;
-  height: 100vh;
-  background-color: #d5d4d4;
-  justify-content: center;
-  background-image: url("https://images.unsplash.com/photo-1519501025264-65ba15a82390?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max&ixid=eyJhcHBfaWQiOjEzNzYzNn0?utm_source=dictionnaire&utm_medium=referral");
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
 }
 
 .global-container{
   margin: 20px;
-  border: 2px solid red;
-  padding: 25px;
+  padding: 50px;
+  height: 100vh;
+  margin: 0;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .weather-container{
@@ -29,7 +19,7 @@ body {
   padding: 25px;
   margin: 25px 0 25px 0;
   border-radius: 12px;
-  background-color: rgba(255, 255, 255, 0.895);
+  background-color: rgba(255, 255, 255, 0.945);
   box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.124);
   flex-wrap: wrap;
 }
@@ -80,7 +70,7 @@ font-size: 12px;
   display: flex;
   justify-content: space-between;
   border-radius: 12px;
-  background-color: rgba(255, 255, 255, 0.895);
+  background-color: rgba(255, 255, 255, 0.952);
   box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.124);
   padding: 25px;
   margin-top: 5px;
@@ -88,6 +78,7 @@ font-size: 12px;
 
 .day{
   margin: 5px;
+  font-weight: 700;
 }
 
 .day-little{
@@ -101,4 +92,24 @@ font-size: 12px;
 .temperature-little{
   font-size: 70px;
   margin: 0;
+}
+
+@media (max-width: 500px) {
+  .temperature{
+    margin: 0;
+    font-size: 50px; 
+  }
+
+  .grid-container {
+    display: grid;
+    grid-template-columns: 1fr; /* Une colonne */
+    grid-template-rows: repeat(7, 1fr); /* Sept lignes */
+    gap: 10px; /* Espacement entre les éléments de la grille */
+    height: 100%; /* Hauteur de la grille */
+  }
+  .weather-container{
+    justify-content: center;
+    text-align: center;
+  }
+
 }

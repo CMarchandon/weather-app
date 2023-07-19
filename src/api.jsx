@@ -9,3 +9,4 @@ export const getGeoapi = {
 
   export const weatherApiUrl ="https://api.openweathermap.org/data/2.5";
   export const weatherApiKey = "94bf9cd694c60ce64193695d9a3cde78";
+  export const unsplashApiKey ="97lPrfPwslgBzDwZuwogpTblQ-lyBN20ehsOUPlswy4";
