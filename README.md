@@ -13,7 +13,7 @@ The Weather App allows users to enter a city and displays the weather forecast f
 
 You can access the application using the following links:
 
-- [Netlify](https://64b933795e1ed600084350f8--wonderful-genie-437349.netlify.app/) (Live demo of the Weather App)
+- [Netlify] https://64b933795e1ed600084350f8--wonderful-genie-437349.netlify.app/ (Live demo of the Weather App)
 - [GitHub](#) (GitHub repository for the Weather App)
 
 ## Features
