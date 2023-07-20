@@ -1,7 +1,12 @@
 body{
   margin: 0;
   font-family: Arial, Helvetica, sans-serif;
-  background: rgb(61, 61, 61);
+  background: rgb(80, 80, 80);
+  background-position: center ;
+  background-repeat:repeat;
+  background-size: cover;
+  height: 100%;
+  padding: 55px;
 }
 h1{
   color: azure;
@@ -23,11 +28,7 @@ h1{
 
 .global-container{
   padding: 50px;
-  height: 100%;
   margin: 0;
-  background-position: center top;
-  background-repeat: no-repeat;
-  background-size: cover;
 }
 
 .weather-container{
@@ -107,11 +108,17 @@ font-size: 12px;
 }
 
 .temperature-little{
-  font-size: 50px;
+  font-size: 40px;
   margin: 0;
 }
 
 /* CSS for larger screens */
+@media (min-width:1240px){
+  .content-container{
+    margin: 0 auto 0;
+    max-width:1000px ;
+  }
+}
 
 @media (min-width: 720px) and (max-width: 1240px) {
   .grid-container {

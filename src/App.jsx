@@ -26,6 +26,11 @@ function App() {
     }
   }, [currentWeather]);
 
+  // New useEffect to apply the background image to the body
+  useEffect(() => {
+    document.body.style.backgroundImage = photoUrl ? `url(${photoUrl})` : 'none';
+  }, [photoUrl]);
+
   const handleOnSearchChange = (searchData) => {
     const [lat, lon] = searchData.value.split(' ');
 
@@ -46,8 +51,7 @@ function App() {
   };
 
   return (
-    <div className="global-container" style={{ backgroundImage: `url(${photoUrl})` }}>
-
+    <div className="content-container">
       <h1>Weather Corp <span className='corp'>©</span> </h1>
 
       {/* Render the Search component and pass the handleOnSearchChange callback */}
