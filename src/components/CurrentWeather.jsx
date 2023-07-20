@@ -11,7 +11,7 @@ const CurrentWeather = ({data}) => {
                 <p className='temperature'> {data.main.temp}°c</p>
             </div>
             <div className='weather-container-bottom'>
-                <img alt="weather icon" className='weather-icon' src={`.src/icons/${data.weather[0].icon}.png`} />
+                <img alt="weather icon" className='weather-icon' src={`/src/assets/${data.weather[0].icon}.png`} />
                 <div className='parameter-row'>
                     <span className='parameter-label details'>Details</span>
                 </div>

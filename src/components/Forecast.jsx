@@ -23,7 +23,7 @@ const Forecast = ({ data }) => {
           </div>
           <div className="card-image">
             {/* Display the weather icon */}
-            <img alt="weather icon" className='weather-icon' src={`src/icons/${item.weather[0].icon}.png`} />
+            <img alt="weather icon" className='weather-icon' src={`/src/assets/${item.weather[0].icon}.png`} />
           </div>
         </div>
       ))}
