@@ -31,3 +31,7 @@ The development of this Weather App was made possible by the documentation resou
 - [React](https://reactjs.org/)
 - [OpenClassrooms](https://openclassrooms.com/) 
 - [freeCodeCamp](https://www.freecodecamp.org/) 
+
+## Known issues:
+
+Icons fail to load once deployed on Netlify (issue with the "dist" folder). This problem is not visible locally, and I'm working on the fix.
