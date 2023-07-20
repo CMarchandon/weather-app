@@ -1,6 +1,7 @@
 # Weather App
 
 This weather app is powered by OpenWeather data and developed using React. It was created as part of the learning process at BeCode.org (Liège).
+![preview](preview.png)
 
 ## Overview
 
@@ -28,4 +29,3 @@ The development of this Weather App was made possible by the documentation resou
 - [React](https://reactjs.org/)
 - [OpenClassrooms](https://openclassrooms.com/) 
 - [freeCodeCamp](https://www.freecodecamp.org/) 
-# weather-app
